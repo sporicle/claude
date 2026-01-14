@@ -4,8 +4,6 @@ A collection of custom slash commands for [Claude Code](https://claude.ai/code).
 
 ## Installation
 
-### Option 1: Add to your home directory (personal use)
-
 ```bash
 git clone https://github.com/sporicle/claude.git /tmp/claude-skills
 cp -r /tmp/claude-skills/.claude/commands ~/.claude/
@@ -13,16 +11,6 @@ rm -rf /tmp/claude-skills
 ```
 
 This merges the commands into your existing `~/.claude` directory, making them available in all projects.
-
-### Option 2: Add to a specific project (team use)
-
-```bash
-cd your-project
-mkdir -p .claude/commands
-curl -o .claude/commands/magicblock.md https://raw.githubusercontent.com/sporicle/claude/main/.claude/commands/magicblock.md
-```
-
-This makes commands available only in that project and can be shared with your team via version control.
 
 ## Available Commands
 
