@@ -1,5 +1,5 @@
 ---
-description: Use when working with MagicBlock Ephemeral Rollups, Solana delegation, cranks, or VRF in Anchor programs.
+description: Use when working with MagicBlock Ephemeral Rollups.
 argument-hint: <task description>
 ---
 
