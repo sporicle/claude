@@ -15,6 +15,8 @@ MagicBlock Ephemeral Rollups (ER) enable high-performance, low-latency transacti
 
 **Key Concept**: Delegation transfers account ownership from your program to the delegation program, allowing the ephemeral rollup to process transactions. Undelegation commits final state back to Solana.
 
+**Note**: While both PDAs and on-curve accounts can be delegated, the most common usage is delegating PDAs. All examples in this guide use PDAs.
+
 ## Architecture
 
 ```
@@ -291,7 +293,7 @@ const data = manuallyDecodeAccount(accountInfo.data);
 - Always use `skipPreflight: true` - Faster transactions, ER handles validation
 - Use dual connections - Base layer for delegate, ER for operations/undelegate
 - Verify delegation status - Check `accountInfo.owner.equals(DELEGATION_PROGRAM_ID)`
-- Wait for state propagation - Add delays after delegate/undelegate in tests
+- Wait for state propagation - Add a 3 second sleep after delegate/undelegate in tests before proceeding to the next step
 - Use `GetCommitmentSignature` - Verify commits reached base layer
 
 ### Don'ts
