@@ -490,10 +490,10 @@ WS_ROUTER_ENDPOINT=wss://devnet-router.magicblock.app/
 
 | Software | Version |
 |----------|---------|
-| Solana | 2.1.6 - 2.3.13 |
-| Rust | 1.82 - 1.85.0 |
+| Solana | 2.3.13 |
+| Rust | 1.85.0 |
 | Anchor | 0.32.1 |
-| Node | 22+ |
+| Node | 24.10.0 |
 
 ## Resources
 
