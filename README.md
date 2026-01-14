@@ -49,26 +49,6 @@ Claude will load the relevant context and help you with:
 - Adding VRF (verifiable randomness)
 - Best practices and common gotchas
 
-## Adding New Commands
-
-Create a new markdown file in `.claude/commands/`:
-
-```
-.claude/commands/my-command.md
-```
-
-With YAML frontmatter:
-
-```markdown
----
-description: Short description of when to use this command
----
-
-# My Command
-
-Your command content here...
-```
-
 ## Structure
 
 ```
