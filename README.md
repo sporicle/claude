@@ -38,10 +38,6 @@ This merges the commands into your existing `~/.claude` directory, making them a
 /magicblock set up a crank that updates game state every 100ms
 ```
 
-```
-/magicblock add dual connection support to my frontend
-```
-
 ## Structure
 
 ```
