@@ -16,22 +16,31 @@ This merges the commands into your existing `~/.claude` directory, making them a
 
 | Command | Description |
 |---------|-------------|
-| `/magicblock` | MagicBlock Ephemeral Rollups patterns for Anchor/Solana programs |
+| `/magicblock <task>` | MagicBlock Ephemeral Rollups patterns for Anchor/Solana programs |
 
 ## Usage
 
-Once installed, open Claude Code and type the command name:
-
 ```
-/magicblock
+/magicblock <describe what you want to do>
 ```
 
-Claude will load the relevant context and help you with:
-- Setting up delegation/undelegation
-- Configuring dual connections (base layer + ephemeral rollup)
-- Implementing cranks (scheduled tasks)
-- Adding VRF (verifiable randomness)
-- Best practices and common gotchas
+### Examples
+
+```
+/magicblock add delegation hooks to my player account
+```
+
+```
+/magicblock change my roll_dice function to use VRF
+```
+
+```
+/magicblock set up a crank that updates game state every 100ms
+```
+
+```
+/magicblock add dual connection support to my frontend
+```
 
 ## Structure
 

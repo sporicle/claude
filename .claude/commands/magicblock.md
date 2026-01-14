@@ -1,10 +1,13 @@
 ---
-description: Use when working with MagicBlock Ephemeral Rollups, Solana delegation, cranks, or VRF in Anchor programs. Provides patterns for high-performance blockchain transactions.
+description: Use when working with MagicBlock Ephemeral Rollups, Solana delegation, cranks, or VRF in Anchor programs.
+argument-hint: <task description>
 ---
 
 # MagicBlock Ephemeral Rollups
 
-Use this guide when implementing MagicBlock Ephemeral Rollups in Anchor/Solana programs.
+Help the user with the following task: $ARGUMENTS
+
+Use the reference below to implement MagicBlock Ephemeral Rollups patterns correctly. Read the relevant files in the user's codebase first, then make the requested changes following these patterns.
 
 ## Overview
 
