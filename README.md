@@ -19,6 +19,7 @@ This merges the commands and plugins into your existing `~/.claude` directory, m
 |---------|-------------|
 | `/magicblock <task>` | MagicBlock Ephemeral Rollups patterns for Anchor/Solana programs |
 | `/simplify` | Simplify recently modified code, then commit and push |
+| `/interview <spec file>` | In-depth interview about a spec to uncover hidden requirements |
 
 ## Usage
 
@@ -44,11 +45,26 @@ Examples:
 
 Automatically reviews recently modified files, simplifies the code for clarity and maintainability, runs tests, and commits the changes.
 
+### /interview
+
+```
+/interview SPEC.md
+```
+
+Conducts an in-depth interview about a specification file, asking non-obvious questions about:
+- Technical implementation details and edge cases
+- Architecture tradeoffs and scalability concerns
+- UI/UX flows, error states, and accessibility
+- Business logic edge cases and assumptions
+
+Continues interviewing until all ambiguities are resolved, then updates the spec file with gathered details.
+
 ## Structure
 
 ```
 .claude/
 ├── commands/
+│   ├── interview.md         # /interview command
 │   ├── magicblock.md        # /magicblock command
 │   └── simplify.md          # /simplify command
 └── plugins/
