@@ -20,6 +20,7 @@ This merges the commands and plugins into your existing `~/.claude` directory, m
 | `/magicblock <task>` | MagicBlock Ephemeral Rollups patterns for Anchor/Solana programs |
 | `/simplify` | Simplify recently modified code, then commit and push |
 | `/interview <spec file>` | In-depth interview about a spec to uncover hidden requirements |
+| `/ralph-setup <description>` | Setup Ralph workflow: interview, create spec, PRD, and prompt files |
 
 ## Usage
 
@@ -45,6 +46,20 @@ Examples:
 
 Automatically reviews recently modified files, simplifies the code for clarity and maintainability, runs tests, and commits the changes.
 
+### /ralph-setup
+
+```
+/ralph-setup <describe what you want to build>
+```
+
+Sets up a complete Ralph workflow for autonomous iterative development. Conducts an interview to gather requirements, then generates:
+- `.ralph/RALPH-SPEC.md` - Comprehensive project specification
+- `.ralph/prd.json` - Prioritized user stories
+- `.ralph/RALPH-PROMPT.md` - Loop prompt for autonomous implementation
+- `.ralph/progress.txt` - Progress tracking file
+
+After setup, start the loop with `/ralph-loop`.
+
 ### /interview
 
 ```
@@ -66,6 +81,7 @@ Continues interviewing until all ambiguities are resolved, then updates the spec
 ├── commands/
 │   ├── interview.md         # /interview command
 │   ├── magicblock.md        # /magicblock command
+│   ├── ralph-setup.md       # /ralph-setup command
 │   └── simplify.md          # /simplify command
 └── plugins/
     └── code-simplifier/     # Agent for code simplification
