@@ -6,6 +6,8 @@ allowed-tools: Read, Write, Edit, AskUserQuestion, Glob, Grep, Bash(mkdir:*)
 
 # Ralph Setup Command
 
+**IMPORTANT: This skill is SETUP ONLY. You must NEVER begin executing the Ralph loop or start working on user stories. Your job ends after creating all the setup files and presenting the summary. Do not research, implement, code, or take any action on the PRD stories. Just set up the workflow files and stop.**
+
 You are setting up a complete Ralph workflow for autonomous iterative development. This involves creating several files that will guide an AI agent through implementing a project.
 
 ## Input
